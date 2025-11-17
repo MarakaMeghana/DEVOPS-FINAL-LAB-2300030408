@@ -31,7 +31,7 @@ jobs:
           file: ./springbootproject/backend.Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/2300030408-final-backend:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/30408-final-backend:latest
           no-cache: true
 
       - name: Build and push frontend image
@@ -41,7 +41,7 @@ jobs:
           file: ./reactapp/frontend.Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/2300030408-final-frontend:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/30408-final-frontend:latest
           no-cache: true
 
   build-test:
